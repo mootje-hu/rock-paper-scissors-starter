@@ -14,6 +14,8 @@ public class RockPaperScissors implements Rules {
                         return Result.WIN;
                     case PAPER:
                         return Result.LOSE;
+                    case ROCK:
+                        return Result.DRAW;
                 }
 
             case PAPER:
@@ -22,6 +24,8 @@ public class RockPaperScissors implements Rules {
                         return Result.WIN;
                     case SCISSORS:
                         return Result.LOSE;
+                    case PAPER:
+                        return Result.DRAW;
                 }
 
             case SCISSORS:
@@ -31,8 +35,10 @@ public class RockPaperScissors implements Rules {
                     case ROCK:
                         return Result.LOSE;
                 }
-        }
 
+        }
         return Result.DRAW;
+
     }
+
 }
